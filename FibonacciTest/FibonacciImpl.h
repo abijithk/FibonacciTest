@@ -22,10 +22,9 @@ public:
 #ifdef ENABLE_STACK_USAGE_CHECK
     static uint64_t leastStackAddress;
     static uint64_t maxStackAddress;
-    static void resetStackAddress();
+    static void resetStackAddresses();
 private:
-    static void setStackAddresses(uint64_t addr);
-    static void setMaxStackAddress(uint64_t addr);
+    static void setStackAddress(uint64_t addr);
 #endif
     
 private:
